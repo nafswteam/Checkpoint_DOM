@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* main section styles are here */
+main {
+  gap: 30px;
+  transition: 1s ease-in-out;
+}
+
+/* ? div for each product style is here */
+.each-product {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  margin-bottom: 1.9rem;
+}
+
+/* This style alternate the color of every eventh child (product) */
+.each-product:nth-child(even) {
+  background-color: rgb(231, 229, 229);
+}
+
+/* The styles for product title and like button div is here */
+.product-title-and-like {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.product-title {
+  font-size: 26px;
+  font-weight: 500;
+}
+/* --------------------------- */
+
+/* Like and unlike an item style is here  */
+#favourite-item {
+  font-size: 30px;
+  color: red;
+}
+
+/* product image style is here */
+.product-image {
+  width: 150px;
+}
+
+/* Product amount style is here */
+.product-amount {
+  font-size: 20px;
+  font-weight: bold;
+}
+/* remove button style is here */
+.remove-item {
+  font-size: 20px;
+}
+
+/* increase and decrease button styles are here */
+.bi-dash-lg,
+.bi-plus-lg {
+  background-color: #c09b2c;
+  border: none;
+  border-radius: 10px;
+  width: 50px;
+  margin: 0px 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bolder;
+}
+/* The style for quantity is here */
+span#quantity {
+  font-size: 20px;
+  font-weight: 400;
+  width: 10px;
+}
+/* hovering style is here */
+.remove-item:hover {
+  cursor: pointer;
+  color: #e15808;
+}
+#favourite-item:hover,
+.payment-method {
+  cursor: pointer;
+}
+/* *******************8888 */
+
+/* The style for checkout div is here */
+/*  */
+
+#checkout-summary > div.summary-sub-total {
+  margin-top: 50px;
+}
+#checkout-button {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  font-size: 26px;
+}
+
+.summary {
+  margin-bottom: 50px;
+  gap: 30px;
+}
